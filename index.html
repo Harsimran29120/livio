@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livio Lombardo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    
+    <nav id="desktop-nav">
+      <div class="logo"><a href="./index.html">Livio Lombardo</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Pictures</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><a href="./index.html">Livio Lombardo</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Pictures</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/alone/main2.png" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Livio Lombardo</h1>
+        <p class="section__text__p2">Artist travelling around the world</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Bio.pdf')"
+          >
+            Download CV
+          </button>
+         
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/livio-lombardo-51737419'"
+          />
+          <img
+            src="./assets/facebook.png"
+         
+            class="icon"
+            onclick="location.href='https://www.facebook.com/liviolombardomusic'"
+          />
+          <img
+            src="./assets/instagram.png"
+            class="icon"
+            onclick="location.href='https://instagram.com/_liviolombardo_?igshid=OGQ5ZDc2ODk2ZA=='"
+          />
+          <img
+            src="./assets/spotify.png"
+            class="icon"
+            onclick="location.href='https://open.spotify.com/artist/5ntJyti1bNiYKNyoktKkjs?si=C8nnSnUxTmSZMF81YgtMNg'"
+          />
+          <img
+            src="./assets/tiktok.png"
+            class="icon"
+            onclick="location.href='https://www.tiktok.com/@liviolombardomusic?_t=8fb7Jaj0aaj&_r=1'"
+          />
+          <img
+            src="./assets/youtube.png"
+            class="icon"
+            onclick="location.href='https://youtube.com/@lillogold?si=Vt5kJL6Szi2LRM7G'"
+          />
+        </div>
+      </div>
+    </section>
+
+    
+    
+
+    <section class="seci">
+      <script>
+        window.addEventListener("load", function() {
+          const form = document.getElementById('my-form');
+          form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+              method: 'POST',
+              body: data,
+            })
+            .then(() => {
+              alert("Successfully subscribed to the mailing list!");
+            })
+          });
+        });
+        </script>
+    <div class="newe">
+      <br>
+      <h1 style="margin: 10px;">Subscribe to the newsletter</h1>
+      <form id="my-form"
+      method="POST" 
+      action="https://script.google.com/macros/s/AKfycbyX8Ah0ilnd_0BJ0tabGXXq3V_Q0gFV9ZyQJnsa9zdfriuL7fptaKp47UBwmbfDepTZ/exec"
+    >
+      <input name="Email" type="email" placeholder="Type your email..." required> <br>
+      <input name="Name" type="text" placeholder="Type your name..." required> <br>
+      <button class="btn btn-color-2"  type="submit">Subscribe</button>
+    </form>
+  </div>
+
+
+    
+
+
+    
+      <h1>What's new?</h1> <br>
+      <div class=" details-container2">
+        <div class="image-container img1">
+          <img class="newi" width="45%" src="./assets/logo.png" alt="">
+          <div style="margin-top: 10px;"><a href="./logo.html"></a><button onclick="window.open('./logo.html')" class="btn btn-color-2">Scopri di più sul logo</button></a></div>
+        </div>
+      
+        <div class="image-container img2">
+          <img class="newi" width="45%" style="border-radius: 10px; margin-top: 10px;" src="./assets/album.png" alt="">
+          <div style="margin-top: 10px;"><a href=""></a><button onclick="window.open('https://open.spotify.com/artist/5ntJyti1bNiYKNyoktKkjs?si=C8nnSnUxTmSZMF81YgtMNg')" class="btn btn-color-2">Ascolta il nuovo album</button></a></div>
+        </div>
+      </div>
+      
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/alone/about.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>University of Milan (Department of Oriental Language
+Culture) <br /></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Siena
+Jazz University (Piano Jazz and Composition)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I was born in Gallarate, Italy on May 18, 1988 and began playing the piano in
+1999 at age 11. I participated in several classical and jazz music masterclasses with:
+Gloria Campaner, Irene Veneziano, Dave Liebman, Joe Chambers, Ron Carter, Logan
+Richardson, Neil Angilley, Luciano Biondini, Greg Cohen, Paolo Fresu,Tullio de Piscopo,
+Horarcio Hernandez, Marcus Miller, Chucho Valdès, Naima Acuña, Marcus Gilmore, Ben
+Wendel, Kenny Werner, Gerard Clayton, Matt Mitchell, Yonathan Avishai, Stefano Battaglia,
+and Siena Jazz Summer Workshop playing with Claudio Fasoli, Drew Gress, and Lage Lund
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article style="z-index: 99;">
+                <div>
+                  <h3>• 2002</h3>
+                  <p>Began playing his piano repertoire in various theaters, restaurants, hotels and open air
+concerts within the Lombardy region of Italy.
+</p>
+                </div>
+              </article>
+              <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2003</h3>
+                  <p>Won 1st place playing Aram Kachaturian-Toccata in E flat minor at the Stresa
+International Music Competition, score: 100/100.</p>
+                </div>
+              </article>
+              <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2004</h3>
+                  <p> Won 1st place playing Chopin-Fantaisie Impromptu op. 66 at the Stresa International
+Music Competition, score: 95/100.
+</p> <br>
+<p>Selected from hundreds as one of the top 12 best young pianists (contestants ranged
+from age 12-19) in Lombardy, in the “MUSICA IN LUCE" competition.</p> <br>
+<p>Played Rachmaninov-Prelude in C sharp minor and Rimsky Korsakov-Flight of the
+Bumblebee, in the final concert at ‘’TEATRO DAL VERME’’ in Milan for the final
+performance.
+</p>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>• 2005</h3>
+                  <p> Began his musical composing journey and won 2nd place playing his first piece called
+“BRIGHT CLOUD” at the Stresa International Music Competition, score: 92/100.
+</p>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>• 2007</h3>
+                  <p>Won 1st place playing the Aram Khachaturian-Saber Dance at the Omegna music
+competition, score: 96/100.
+</p>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>• 2008</h3>
+                  <p>Developed an even deeper interest in the electronic music scene of the early years of
+the century which led him to start a non-profit project, creating the ‘’VOICE UNDERGROUND’’
+label with the collaboration of two DJs / producers: Funder (aka Federico Ricchiuto) and DJ
+Fonta (aka Luca Fontana).</p>
+                </div>
+              </article>
+              <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2011</h3>
+                  <p>Played a four-hand piano performance with the pianist Christian Salerno in a youtube
+video that got 10,000+ views: <a href="https://www.youtube.com/watch?v=HVJfjyjW-Nc">watch here</a></p> <br> <p>Invited to be a guest of Tianjin's Municipality in China on their National Day, which
+takes place every year at the beginning of October. Livio recalled back to the summer
+that he worked as an animator in Greece and wanted to repeat that experience in
+China, in Tianjin's Italian district, hosting a one-man show involving singing, dancing
+and playing piano: <a href="https://www.youtube.com/watch?v=9x2n6RTFBmsù">watch here</a></p>
+                </div>
+              </article>
+              <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2012</h3>
+                  <p>Won 1st place at the National Selection of the Chinese Bridge Speech Competition and
+was invited to represent Italy on the world-renowned Chinese channel, Hunan TV.
+</p> <br> <p>Classified in the top 30 out of 120 competitors as a singer, dancer and pianist, and
+remained until the end of the television program:
+<br>
+<a href="https://www.youtube.com/watch?v=t4YpY0c1mJk">‣ watch here</a> <br>
+<a href="https://www.youtube.com/watch?v=xtyQJz9MGps">‣ watch here</a> <br>
+<a href="https://www.youtube.com/watch?v=FNiMhyXYAKo&t=218s">‣ watch here</a> <br>
+<a href="https://www.youtube.com/watch?v=wsxD7JhHWp4&t=338s">‣ watch here</a>
+</p>
+                </div>
+              </article>
+
+               <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2013</h3>
+                  <p>Performed as the grand finale with his progressive rock/metal band, EPHEDRINE,
+among the best 20 bands in Italy at the EMERGENZA ROCK FESTIVAL at ALCATRAZ Milano
+in Italy: <a href="https://www.youtube.com/watch?v=PeV5AFcIhM0">watch here</a> </p> <br>
+<p>Collaborated with the Phoniq Studio held by Simone Limosani with the following works: <br>
+Jingle for ENEL Spot that won 2nd place at the ADCI awards: <a href="https://soundcloud.com/livio-lombardo/enel-backstage-music
+">click here to see more</a> <br>
+Theme song for a series of 16 episodes of cuisine recipes "I & P I Sapori dell'Olio" : <a href="https://www.youtube.com/watch?v=bKU8kv0sL-A">listen here</a>
+</p>
+                </div>
+              </article>
+              
+
+               <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2014</h3>
+                  <p>Moved to Beijing, China and deeply immersed himself into the Chinese music scene.
+Performed in prestigious and historical locations, such as the Italian Embassy and the Imperial
+Palace, as an artist hosted by Porsche during their 50th anniversary celebration of the
+Porsche 911 model: <a href="www.facebook.com/media/set/?set=a.854918284631223&type=3">click here</a>
+<br>and CCTV with the Salento singer Eleonora Pierro: <a href="https://www.youtube.com/watch?v=7FdxnvVW9Tk&t=13s">click here</a>
+</p> <br>
+<p>The producer Foolvio joined Livio in Beijing and together they created an electronic
+music live band to perform around China called DANCING FREAKS: <a href="https://www.youtube.com/watch?v=wlwbesBo3Eg&t=7s">listen here</a>
+</p><br>
+<p>Performed in a duo with Japanese guitarist and songwriter OTO TACHIHIKO 音 立 日子
+(aka UBI QUITOS)
+</p> <br>
+<p>Performed in a concert at the Cultural Institute of the Italian Embassy in Beijing where
+he completely improvised this piano solo: <a href="https://soundcloud.com/livio-lombardo/beijing-italian-embassy-improvisation-and-medley">listen here</a></p>
+                </div>
+              </article>
+
+               <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2015</h3>
+                  <p>Returned to Italy and began a new musical path through CIVICA JAZZ UNIVERSITY in
+Milan, where he met CLAUDIO FASOLI with whom he developed a lifetime friendship.</p> <br>
+<p>Took on a project called Afro Cuban Jazz Ensemble with Cuban musicians located in
+Milan, recording the following songs: <br>
+<a href="https://soundcloud.com/livio-lombardo/a-night-in-tunisia-dizzy-gillespie-frank-paparelli
+">‣ listen here</a> <br>
+<a href="https://soundcloud.com/livio-lombardo/manteca-dizzy-gillespie
+">‣ listen here</a> <br>
+<a href="https://soundcloud.com/livio-lombardo/claudia-chucho-valdes
+">‣ listen here</a> <br>
+<a href="https://soundcloud.com/livio-lombardo/caravan-1">‣ listen here</a>
+</p> <br>
+<p>Seasonal job for 6 months at a time in 2015 and 2016 at the 5-star luxury hotel, THE
+VIEW, located in Lugano, Switzerland.
+</p>
+                </div>
+              </article>
+               <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2016-2017</h3>
+                  <p>Made his debut as a percussionist, playing in an unique way, using glass
+percussion created by the designer JIN KURAMOTO for the Milan Design Week: <a href="https://www.linkedin.com/in/livio-lombardo-51737419/details/experience/977486709/multiple-m
+edia-viewer/?profileId=ACoAAAPKiOMBypEUr7GNNDEvHOJHoGt-9Y1rTcM&treasuryMediaId
+=1493222257205">click here</a>
+</p>
+                </div>
+              </article>
+               <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2018</h3>
+                  <p> Met Luca Pagan at Via Tucidide 56 in Milan, the talented musician-researcher who
+specializes in human-computer interaction and wearable technology, and collaborated with
+him to experiment body movement as a form of sound as well as applied electronics to the
+acoustic piano, creating the piano-laptop duo called T56. <br>
+
+<a  href="https://www.youtube.com/watch?v=Vn3iEoEj-jk&t=54s
+">‣ watch here</a> <br>
+<a href="https://soundcloud.com/livio-lombardo/t56-hope
+">‣ watch here</a> <br>
+<a href="https://soundcloud.com/livio-lombardo/t56-music-martial-arts
+">‣ watch here</a> <br>
+<a href="https://soundcloud.com/livio-lombardo/t56-take-five
+">‣ watch here</a>
+</p>
+                </div>
+              </article>
+               <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2019</h3>
+                  <p>Created his first quintet featuring all of his original compositions: <a href="https://www.youtube.com/watch?v=Qr617_mtOqo">listen here</a></p><br>
+                  <p>Played with Madamzajj Swinging Orchestra, a swing orchestra: <a href="https://www.youtube.com/watch?v=l4ukRUVFtPQ">watch here</a></p>
+                </div>
+              </article>
+              <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2021</h3>
+                  <p>Debuted with his own trio, Anitya trio: <br>
+Beyond: <a href="https://www.youtube.com/watch?v=y9ve9VP8fm4">watch here</a> <br>
+Kidnapped by Fate: <a href="https://www.youtube.com/watch?v=YUfbMuRzxzc">watch here</a> <br>
+Vital Reaction: <a href="https://www.youtube.com/watch?v=_r7z42DRKxs">watch here</a> <br>
+Just do it: <a href="https://www.youtube.com/watch?v=I6YbJUBm-dg&list=RDGMEMTmC-2iNKH_l8gQ1LHo9FeQ
+&start_radio=1">watch here</a>
+</p>
+                </div>
+              </article>
+            
+              <article style="z-index: 99;">
+                
+                <div>
+                  <h3>• 2022</h3>
+                  <p>2022 : Graduated from Siena Jazz University with a thesis on NFTs: <a href="https://www.youtube.com/watch?v=VlwPdDiYwZE">watch here</a></p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section> 
+    <section class="brto" id="projects">
+      
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <section style="width: 100%;">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Pictures</h1>
+            <div class="scroll-arrow" id="scroll-left">
+                &#8592;
+              </div>
+              
+              <ul id="imgList">
+                <li class="liq"><img class="liqm" src="./assets/pic/Carlo_gravina.jpeg"/><p>Con Carlo Gravina</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic/Dave_Liebman.jpeg"/><p>Con Dave Liebman</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic/davide_garruto.jpeg"/><p>Con Davide Garruto</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic/federico_malaman.jpeg"/><p>Con Federico Malaman</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic/greg_cohen.jpeg"/><p>Con Greg Cohen</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic/marcus_miller.jpeg"/><p>Con Marcus Miller</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic/paolo_fresu.jpeg"/><p>Con Paolo Fresu</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic/Ron Carter.jpeg"/><p>Con Ron Carter</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic/tulio_de_piscopo.jpeg"/><p>Con Tulio De Piscopo</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Chucho Valdés.jpeg"/><p>Chucho Valdés</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Drew Gress.jpeg"/><p>Drew Gress</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Gonzalo Rubalcaba & Chucho Valdez.jpeg"/><p>Gonzalo Rubalcaba & Chucho Valdez</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Hiromi Uehara.jpeg"/><p>Hiromi Uehara</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Horacio Hernandez.jpeg"/><p>Horacio Hernandez</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Luciano Biondini.jpeg"/><p>Luciano Biondini</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Marco Simoncini.jpeg"/><p>Marco Simoncini</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Michel Camilo.jpeg"/><p>Michel Camilo</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/My First concert (1999).png"/><p>My First concert (1999)</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Neil Angilley.jpeg"/><p>Neil Angilley</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Nelson Betancourt.jpeg"/><p>Nelson Betancourt</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/plus.jpeg"/><p>.</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Sante Palumbo.jpeg"/><p>Sante Palumbo</p></li>
+                <li class="liq"><img class="liqm" src="./assets/pic2/Winning the competition as the best student in Italy in Cinese language and culture .jpeg"/><p>Winning the competition 
+                  <br>as the best student in <br>Italy in Cinese language <br>and culture</p></li>
+
+              </ul>
+              <div class="scroll-arrow" id="scroll-right" onclick="scrollRight()">
+                &#8594;
+              </div>
+            </section>
+        </div>
+      </div>
+      
+       <div class="footd">
+       <hr>
+       <br>
+      <p style="text-align: center;">Copyright &#169; 2023 Livio Lombardi. All Rights Reserved. <br>
+      designed by <a href="https://www.harsimran.it">Harsimran Singh</a></p> <br>
+    </div>
+    </section>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
