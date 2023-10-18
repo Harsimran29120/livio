@@ -46,7 +46,8 @@ input {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
-  width: 80%;
+  width: 40%;
+  border: 1.5px solid black;
 }
 
 .nav-links {
@@ -57,7 +58,7 @@ input {
 }
 
 a {
-  color: black;
+  color: rgb(160, 74, 102);
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -387,10 +388,11 @@ section {
 
 .seci {
   margin-bottom: -100px;
+  
 }
 
 .footd {
-  margin-top: 190px;
+  margin-top: 216px;
 }
 
 @media screen and (max-width: 600px) {
@@ -433,6 +435,10 @@ section {
   }
   .footd {
     margin-top: 0;
+  }
+
+  input {
+    width: 80%;
   }
   
 }

@@ -12,7 +12,7 @@ console.log(width)
   if (width < 800) {
 // When a user clicks on the right arrow, the ul will scroll 750px to the right
       scrollRight.addEventListener('click', (event) => {
-        imgList.scrollBy(240, 0);
+        imgList.scrollBy(200, 0);
     });}
   else {
     scrollRight.addEventListener('click', (event) => {
