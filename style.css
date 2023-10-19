@@ -277,6 +277,7 @@ section {
 
 #about {
   position: relative;
+  margin-top: 10%;
 }
 
 .about-containers {
@@ -353,9 +354,7 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
-  position: relative;
-}
+
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
@@ -382,12 +381,12 @@ section {
 }
 
 .brto {
-  padding-top: 2430px;
-  width: 80%;
+  margin-top: 130%;
+  
 }
 
 .seci {
-  margin-bottom: -100px;
+  margin-bottom: 0;
   
 }
 
@@ -406,7 +405,8 @@ section {
   }
   .brto {
     padding-top: 0;
-    width: 86%;
+    width: 100%;
+    
   }
   .newi {
     width: 72%;
@@ -461,9 +461,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
-  position: relative;
-}
+
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -539,24 +537,9 @@ footer p {
 
 section {
   text-align: center;
-  margin-top: 2.5%;
+  margin-top: 1.5%;
 }
-.scroll-arrow {
-  width: 10%;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    cursor: pointer;
-    padding:0;
-    margin:0;
-    opacity: 0.5;
-  font-size:34px;
-  transition: 0.2s;
-}
-.scroll-arrow:hover {
-  transition: 0.2s;
-  opacity:1;
-}
+
   ul {
     width: 70%;
     scroll-behavior: smooth;
