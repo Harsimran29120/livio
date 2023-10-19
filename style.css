@@ -161,11 +161,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section-container {
@@ -277,13 +273,12 @@ section {
 
 #about {
   position: relative;
-  margin-top: 10%;
 }
 
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  
 }
 
 .about-details-container {
@@ -380,19 +375,14 @@ section {
   
 }
 
-.brto {
-  margin-top: 130%;
-  
-}
+
 
 .seci {
   margin-bottom: 0;
   
 }
 
-.footd {
-  margin-top: 286px;
-}
+
 
 @media screen and (max-width: 600px) {
   .seci {
@@ -406,7 +396,6 @@ section {
   .brto {
     padding-top: 0;
     width: 100%;
-    margin-top: 0;
     
   }
   .newi {
