@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: white;
 }
 
 /* TRANSITION */
@@ -47,7 +48,7 @@ input {
   margin-bottom: 10px;
   text-align: center;
   width: 40%;
-  border: 1.5px solid black;
+  border: 1.5px solid white;
 }
 
 .nav-links {
@@ -72,6 +73,8 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: white;
+  
 }
 
 .logo:hover {
@@ -101,7 +104,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 
@@ -121,7 +124,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -187,24 +190,29 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  color: white
 }
 
 .section__text p {
   font-weight: 600;
+  color: white
 }
 
 .section__text__p1 {
   text-align: center;
+  color: white
 }
 
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  color: white
 }
 
 .title {
   font-size: 3rem;
   text-align: center;
+  color: white
 }
 
 #socials-container {
@@ -212,6 +220,7 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+
 }
 
 /* ICONS */
@@ -239,7 +248,8 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: white 0.1rem solid;
+  color: white
 }
 
 .btn-color-1:hover,
@@ -278,6 +288,7 @@ section {
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
+  color: white
   
 }
 
@@ -304,10 +315,9 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: white 0.1rem solid;
+  border-color: white;
   text-align: center;
 }
 
@@ -315,10 +325,9 @@ section {
   padding: 10px;
   display: flex; /* Change this from flex: 1 to display: flex */
   justify-content: center; /* Horizontally center the containers */
-  background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: white 0.1rem solid;
+  border-color: white;
 }
 
 .image-container {
@@ -339,6 +348,7 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+  color: white
 }
 
 .section__pic-container {
@@ -352,7 +362,7 @@ section {
 
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: white);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -406,8 +416,8 @@ section {
     display: flex; /* Change this from flex: 1 to display: flex */
     flex-direction: column;   
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: white 0.1rem solid;
+    border-color: white;
   }
   
   .image-container {
@@ -454,7 +464,7 @@ article .icon {
 
 
 .color-container {
-  border-color: rgb(163, 163, 163);
+  border-color: white);
   background: rgb(250, 250, 250);
 }
 
@@ -466,12 +476,12 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: white;
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: white;
+  border-color: black;
 }
 
 /* CONTACT */
@@ -487,8 +497,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: white 0.1rem solid;
+  border-color: white;
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
@@ -564,7 +574,7 @@ section {
 }
   
 .newe {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: white 0.1rem solid;
   border-radius: 35px;
   padding: 10px;
   padding-bottom: 27px;
